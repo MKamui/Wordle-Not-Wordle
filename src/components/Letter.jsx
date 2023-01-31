@@ -18,7 +18,7 @@ const Letter = ({letterPos, attemptVal}) => {
   
 
   return (
-    <div className='h-14 w-14 md:h-20 md:w-20 border border-gray-600 m-1 grid items-center text-xl rounded-xl' id={letterState}>
+    <div className='h-12 w-12 md:h-20 md:w-20 border border-gray-600 m-1 grid items-center text-xl rounded-xl' id={letterState}>
       {letter}
     </div>
   )
