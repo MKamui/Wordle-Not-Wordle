@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #correct {
+    @apply bg-green-700;
+  }
+  #almost {
+    @apply bg-yellow-500;
+  }
+  #error {
+    @apply bg-gray-300;
+  }
+  #big {
+    @apply w-14 md:w-20
+  }
+  #disabled {
+    @apply bg-red-500
+  }
+}
