@@ -3,6 +3,7 @@ import Board from './components/Board'
 import GameOver from './components/GameOver'
 import Keyboard from './components/Keyboard'
 import { boardDefault, generateWordSet } from './Words'
+import Swal from 'sweetalert2'
 
 export const AppContext = createContext()
 
@@ -49,7 +50,11 @@ function App() {
     if(wordSet.has(currWord.toLowerCase())){
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0})
     } else {
-      alert("word not found")
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'This is not a word!',
+      })
     }
 
     if(currWord === correctWord){
