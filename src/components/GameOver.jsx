@@ -13,7 +13,7 @@ const GameOver = () => {
       <h3 className='text-2xl font-bold'>{gameOver.guessedWord ? "You won the game!" : "You failed"}</h3>
       <h1 className='text-xl capitalize'>Correct Word: {correctWord}</h1>
       {gameOver.guessedWord && (<h3 className='text-xl'>You guessed in {currAttempt.attempt} attempts</h3>)}
-      <button className='bg-black text-white p-2 w-20 rounded-lg hover:scale-105'
+      <button className='bg-black text-white p-2 w-20 rounded-lg hover:scale-105 hover:bg-green-700'
       onClick={handleRestart}
       >
         Restart
